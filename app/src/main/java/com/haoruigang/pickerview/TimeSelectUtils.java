@@ -334,7 +334,7 @@ public class TimeSelectUtils implements NumberPicker.OnValueChangeListener, View
             return;
         }
         String result = TimeUtils.getTimeDifference(startTime, endTime);
-        selectTime.setText(String.format("选择时间：%s-%s" + startTime, endTime));
+        selectTime.setText(String.format("选择时间：%s-%s", startTime, endTime));
         totalTime.setVisibility(View.VISIBLE);
         totalTime.setText(String.format("(" + "合计 : %s)", result));
         Log.i("TAG", startTime + "------开始时间" + endTime + "------结束时间");
